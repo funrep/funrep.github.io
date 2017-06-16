@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>home on funrep.io</title>
-    <link>http://funrep.io/</link>
+    <link>./</link>
     <description>Recent content in home on funrep.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 15 Jun 2017 15:37:30 +0200</lastBuildDate>
     
-	<atom:link href="http://funrep.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="./index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Website is up</title>
-      <link>http://funrep.io/post/website-is-up/</link>
+      <link>./post/website-is-up/</link>
       <pubDate>Fri, 16 Jun 2017 16:32:40 +0200</pubDate>
       
-      <guid>http://funrep.io/post/website-is-up/</guid>
+      <guid>./post/website-is-up/</guid>
       <description>I decided to setup a personal website, I will use this as a place to reference people to and it&amp;rsquo;s setup so I can blog.
 It&amp;rsquo;s built with the Hugo static site generator and I&amp;rsquo;m currently using GitHub pages to host it. You can find the source files here.</description>
     </item>
     
     <item>
       <title>archive</title>
-      <link>http://funrep.io/archive/</link>
+      <link>./archive/</link>
       <pubDate>Thu, 15 Jun 2017 15:51:15 +0200</pubDate>
       
-      <guid>http://funrep.io/archive/</guid>
+      <guid>./archive/</guid>
       <description></description>
     </item>
     
     <item>
       <title>about</title>
-      <link>http://funrep.io/about/</link>
+      <link>./about/</link>
       <pubDate>Thu, 15 Jun 2017 15:37:30 +0200</pubDate>
       
-      <guid>http://funrep.io/about/</guid>
+      <guid>./about/</guid>
       <description> About me I am Karl-Oskar Rikås, 20-year-old from Gothenburg. During high school, I spent a lot of free time exploring the exciting area that is functional programming, which ignited my interest in programming. Today I study at Lund University to continue my journey in computer science.
 Online profiles  LinkedIn GitHub  </description>
     </item>
