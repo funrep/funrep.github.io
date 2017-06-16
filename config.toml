@@ -1,0 +1,26 @@
+baseURL = "http://funrep.io/"
+languageCode = "en-us"
+title = "funrep.io"
+
+[params]
+  description = "Hi, welcome to my blog"
+  author = "Karl-Oskar Rikås"
+  author_first = "Karl-Oskar"
+
+[taxonomies]
+    tag = "tags"
+
+[[menu.main]]
+    name = "home"
+    url = "/"
+    weight = 2
+
+[[menu.main]]
+    name = "archive"
+    url = "/archive"
+    weight = 3
+
+[[menu.main]]
+    name = "about"
+    url = "/about"
+    weight = 4

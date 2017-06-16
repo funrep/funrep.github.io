@@ -1,0 +1,16 @@
+{{ partial "header.html" . }}
+	<main>
+        <h2>Blog posts</h2>
+        <div id="front-links">
+            <ul>
+                {{ range first 1 .Site.Pages }}
+                <li><time>{{ .Date.Format "02-01-2006"  }}</time> ⌁ <a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                {{ end }}
+            </ul>
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="https://github.com/marcusrettig/data-universe">Data Universe</a> ⌁ WebVR project</li>
+            </ul>
+        </div>
+	</main>
+{{ partial "footer.html" . }}

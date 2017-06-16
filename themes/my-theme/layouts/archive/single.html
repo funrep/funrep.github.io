@@ -1,0 +1,12 @@
+{{ partial "header.html" . }}
+	<main>
+        <h2>Archive</h2>
+        <div id="front-links">
+            <ul>
+                {{ range where .Site.Pages "Section" "post" }}
+                <li><time>{{ .Date.Format "02-01-2006" }}</time> ⌁ <a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                {{ end }}
+            </ul>
+        </div>
+	</main>
+{{ partial "footer.html" . }}
