@@ -1,121 +1,76 @@
-body {
-    color: black;
-    font-family: helvetica, sans-serif;
-    font-size: 16px;
-    margin: 0px auto 0px auto;
-    width: 600px;
+@media only screen and (max-width: 620px) {
+  .header,
+  .bio {
+    width: 100%;
+  }
 }
 
-header {
-    margin-top: 18px;
-    border-bottom: 4px solid #eee;
-    margin-bottom: 30px;
-    margin-left: 12px;
-    padding: 12px 0px 12px 0px;
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
 }
 
-#logo {
-    color: #20E2AF;
-    float: left;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 1s;
-    display: inline-block;
+.background-img {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../beijing_soho.jpg");
+  background-color: #000;
+  height: 100%;
 }
 
-#logo:hover {
+.container {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+.header {
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.lg {
+  font-weight: 700;
+}
+
+.bio {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  width: 30%;
+  margin-left: 45%;
+  margin-right: 20%;
+  text-align: left;
+}
+
+.line {
+  background-color: #fff;
+  width: 100%;
+  height: 2px;
+  margin-top: 14px;
+}
+
+.bio span {
   color: black;
+  background-color: white;
 }
 
-nav {
-  margin: 0px;
-  display: inline-block;
+.bio .links {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-header nav a {
-    color: #79797A;
-    font-weight: bold;
-    margin-left: 12px;
-    text-decoration: none;
-    transition: color 1s;
-}
-
-header nav a:hover {
-  color: black;
-}
-
-header #about {
-  font-size: 15px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-nav ul {
-  margin-top: 0px;
-  padding-left: 0px;
-  list-style: none;
-}
-nav li {
-  display: inline;
-}
-
-footer {
-    border-top: 4px solid #eee;
-    color: #555;
-    font-size: 12px;
-    margin-top: 30px;
-    margin-left: 12px;
-    padding: 12px 0px 12px 0px;
-    text-align: left;
-}
-
-footer a {
-  color: #20E2AF;
-  text-decoration: none;
-  transition: 1s;
-}
-
-footer a:hover {
-  color: black;
-}
-
-
-footer #contact {
-  float: left;
-}
-
-footer #hugo {
-  float: right;
-}
-
-h1 {
-  font-size: 18px;
-}
-
-h2 {
-  font-size: 18px;
-}
-
-h3 {
-  font-size: 16px;
-}
-
-a {
-  text-decoration: none;
-}
-
-div#front-links ul {
-  list-style: circle;
-  line-height: 1.5;
-}
-
-div#front-links time {
-  font-family: monaco, monospace;
-  font-size: 12px;
-}
-
-div#info {
-    color: #555;
-    font-size: 14px;
-    font-style: italic;
+.bio a {
+  color: inherit;
+  text-decoration: inherit;
 }
