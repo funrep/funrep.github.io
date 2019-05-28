@@ -1,18 +1,9 @@
-@media only screen and (max-width: 620px) {
-  .header,
-  .bio {
-    width: 100%;
-  }
-}
-
 body,
 html {
   height: 100%;
   margin: 0;
   font: 400 15px/1.8 "Lato", sans-serif;
-}
-
-.background-img {
+  color: #fff;
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
@@ -23,33 +14,40 @@ html {
 }
 
 .container {
-  position: absolute;
-  left: 0;
-  top: 40%;
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  text-align: center;
-  color: #fff;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 1.75em;
+  letter-spacing: 0.5em;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.75em;
+  letter-spacing: 0.5em;
+  margin: 0;
 }
 
 .header {
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
+  margin-top: 10%;
+  text-align: center;
 }
 
-.lg {
-  font-weight: 700;
-}
-
-.bio {
-  color: #fff;
-  font-family: "Lato", sans-serif;
+.content {
+  font-size: 1em;
   font-weight: 300;
-  width: 30%;
-  margin-left: 45%;
-  margin-right: 20%;
   text-align: left;
+  width: 30%;
+  margin-left: 20%;
+  line-height: 1.7em;
 }
 
 .line {
@@ -59,18 +57,25 @@ html {
   margin-top: 14px;
 }
 
-.bio span {
+span {
   color: black;
   background-color: white;
 }
 
-.bio .links {
+.links {
   margin-top: 5px;
   display: flex;
   justify-content: space-evenly;
 }
 
-.bio a {
+a {
   color: inherit;
   text-decoration: inherit;
+}
+
+@media only screen and (max-width: 620px) {
+  .content {
+    width: 80%;
+    margin-left: 0;
+  }
 }
