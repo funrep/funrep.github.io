@@ -97,6 +97,7 @@ h2 {
 .header {
   margin-top: 10%;
   text-align: center;
+  cursor: pointer;
 }
 
 .content {
@@ -106,6 +107,14 @@ h2 {
   width: 30%;
   margin-left: 20%;
   line-height: 1.7em;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#main-content {
+  min-height: 100px;
 }
 
 .line {

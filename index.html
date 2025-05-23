@@ -23,18 +23,22 @@
   <body>
     <div class="background-img">
       <div class="container">
-        <div class="header">
+        <div class="header" onclick="showContent('home')" style="cursor:pointer;">
           <h1>CODE</h1>
           <h2>EXPLORE</h2>
         </div>
         <div class="content">
-          Software engineer in <span>tech</span>, and, MSc grad from
-          <span>Lund University</span> in <i>Programming Languages</i>.
-          Growing curiosity about distributed computing and
-          <span>Unison</span>. When not hacking away in front of the
-          computer I like to travel and explore.
+          <div id="main-content">
+            Software engineer in <span>tech</span>, and, MSc grad from
+            <span>Lund University</span> in <i>Programming Languages</i>.
+            Growing curiosity about distributed computing and
+            <span>Unison</span>. When not hacking away in front of the
+            computer I like to travel and explore.
+          </div>
           <div class="line"></div>
           <div class="links">
+            <a href="#" onclick="showContent('services')">Services</a>
+            <a href="#" onclick="showContent('products')">Products</a>
             <a href="./blog/index.html">Blog</a>
             <a href="mailto:karloskarrikaas@email.com">Email</a>
             <a href="https://github.com/funrep">Github</a>
@@ -43,5 +47,18 @@
         </div>
       </div>
     </div>
+
+    <script>
+      function showContent(type) {
+        const mainContent = document.getElementById('main-content');
+        if (type === 'services') {
+          mainContent.innerHTML = 'Offering advisory and consulting services in engineering, reach out.';
+        } else if (type === 'products') {
+          mainContent.innerHTML = '<span>Coming soon...</span>';
+        } else {
+          mainContent.innerHTML = 'Software engineer in <span>tech</span>, and, MSc grad from <span>Lund University</span> in <i>Programming Languages</i>. Growing curiosity about distributed computing and <span>Unison</span>. When not hacking away in front of the computer I like to travel and explore.';
+        }
+      }
+    </script>
   </body>
 </html>
